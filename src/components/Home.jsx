@@ -1,16 +1,29 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTruck, faGlobe, faHandshake } from '@fortawesome/free-solid-svg-icons';
 import './css/Home.css';
 import testimonialImage from "../assets/images/random.jpg"
-
+import heroImage from "../assets/images/heor-home.jpg"
 function Home() {
   return (
     <div className="home">
-      <h2>Transforming Data Into Insights</h2>
-      <p>Your Data, Analytics, and Cloud Computing Partner.</p>
-      <p>Enabling businesses to extract value through data and analytic solutions.</p>
+      <section className="home-hero">
+        <div className="home-hero-content">
+          <h1>Transforming Data Into Insights</h1>
+          <h2>Your Data, Analytics and Cloud Computing Partner</h2>
+          <p>
+            Enabling businesses to extract value through data and analytic solutions in the domains of Cloud, Data Management, Analytics, AI and ML, Governance, Hyper Automation, and Enterprise Application Development.
+          </p>
+          <Link to="/about" className="home-hero-button">
+          Discover Our Success Stories
+        </Link>
 
+        </div>
+        <div className="home-hero-image">
+          <img src={heroImage} alt="Hero" />
+        </div>
+      </section>
       <section className="what-we-do">
         <h3>What We Do</h3>
         <p>

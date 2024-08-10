@@ -1,5 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {Link} from "react-router-dom"
 import { faThumbsUp, faBolt, faChartLine, faTools, faShareAlt, faTrophy, faBullseye, faShieldAlt } from '@fortawesome/free-solid-svg-icons';
 import './css/About.css';
 import heroImage from '../assets/images/hero-bg.jpg'
@@ -12,10 +13,14 @@ function About() {
         <div className="hero-overlay">
           <h1>About Us</h1>
           <p>Transforming enterprises through the power of data.</p>
-          <button className="cta-button">LET'S TALK</button>
+          <Link to="/contact" className="contact-button">
+          Let's Talk
+        </Link>
+
         </div>
       </div>
-      <div className="about-content">
+      <div className='wrapper'>
+      <div className="about-contents">
         <h2>Maximize the Value of Your Data</h2>
         <p>
           Enhancing customer satisfaction, operational efficiency, and business growth begins with leveraging data. However, realizing the full potential of your data demands reliable and scalable infrastructure. For over two decades, we've been intensely focused on data solutions and the infrastructure that supports them. Our expertise in data and AI empowers business and IT leaders with insights they can trust—helping them make better, data-driven decisions every day.
@@ -80,6 +85,7 @@ function About() {
             <p>We take care of your data by ensuring it’s correct, complete, and compliant.</p>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
