@@ -1,0 +1,155 @@
+.about {
+    text-align: center;
+  }
+  
+  .hero-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-overlay p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .about-content {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .why-partner {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .why-partner h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .why-partner p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .why-partner-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .partner-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 32px;
+    width: 22%;
+    margin-bottom: 24px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .partner-card .icon {
+    font-size: 48px;
+    color: #e63946;
+    margin-bottom: 24px;
+  }
+  
+  .partner-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  
+  .partner-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-overlay h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-overlay p {
+      font-size: 1.2rem;
+    }
+  
+    .cta-button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  
+    .about-content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .about-content p {
+      font-size: 1rem;
+    }
+  
+    .why-partner-cards {
+      flex-direction: column;
+    }
+  
+    .partner-card {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+  
